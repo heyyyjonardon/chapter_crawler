@@ -1,7 +1,7 @@
 from tkinter import *
 from selenium import webdriver
 
-x = webdriver.Firefox()
+#x = webdriver.Firefox()
 
 def next_chapter():
     x.get('https://www.learncbse.in/cbse-notes-class-11-chemistry/')
@@ -24,6 +24,9 @@ input_field.grid()
 
 jump = Button(widget,text="JUMP",command=next_chapter)
 jump.grid()
+
+quit_button = Button(widget,text="Hmm..QUIT!",command=widget.quit)
+quit_button.grid()
 
 
 widget.title('Chapter Crawler')
